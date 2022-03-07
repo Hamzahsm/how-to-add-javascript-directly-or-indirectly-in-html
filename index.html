@@ -1,17 +1,23 @@
 <!doctype html>
 <html>
     <head>
-        <title>How to add javascript internal and external on html</title>
+        <title>how to add javascript direct or indirect in html</title>
     </head>
     <body id="body">
-        <button id="button1">Button 1</button>
-        <button id="button2">Button 2</button>
+        <button id="button1">button 1</button>
+        <button id="button2">button 2</button>
+
+        <!-- this code below is how to add javascript directly in html -->
+
         <script>
             var button1 = document.getElementById('button1').addEventListener('click', function(){
                 var body = document.getElementById('body');
-                    body.style.backgroundColor = 'red';
-            })
+                body.style.backgroundColor = 'red';
+            });
         </script>
+
+        <!-- this code below is how to add javascript indirectly in html -->
+
         <script src="./script.js"></script>
     </body>
 </html>
