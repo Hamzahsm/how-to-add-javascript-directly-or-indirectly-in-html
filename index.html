@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title>How to add javascript internal and external on html</title>
+    </head>
+    <body id="body">
+        <button id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <script>
+            var button1 = document.getElementById('button1').addEventListener('click', function(){
+                var body = document.getElementById('body');
+                    body.style.backgroundColor = 'red';
+            })
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>
